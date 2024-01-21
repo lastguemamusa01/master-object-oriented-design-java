@@ -1,5 +1,7 @@
+package firstPractice;
+
 public class Earth {
-    
+
     // main method
     public static void main(String args[]) {
 

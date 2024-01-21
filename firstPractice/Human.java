@@ -1,3 +1,5 @@
+package firstPractice;
+
 public class Human {
 
     // define characteristics as attributes
