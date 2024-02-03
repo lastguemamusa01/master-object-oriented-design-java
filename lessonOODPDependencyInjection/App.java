@@ -22,6 +22,21 @@ public class App {
 
   Spring framework or another framework -> provide DI -> named spring containers
 
+  dependency injection with maven(online code repository)
+  pom.xml -> import spring framework
+  src/main/resources -> applicationContext.xml -> in xml beans
+ <bean id="smallEngine" class="parts.SmallEngine">
+  <constructor-arg value="150"/>
+ </bean>
+ <bean id="mrBeansCar" class="vehicles.Vehicle">
+  <constructor-arg ref="smallEngine"/>
+ </bean>
+
+  in App.java -> in main method
+  ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+  Vehicle aCar = (Vehicle) context.getBean("mrBeansCar");
+  aCar.crankIgnition();
+
    */
 
   public static void main(String[] args) {
